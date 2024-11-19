@@ -294,6 +294,12 @@ public class PanelCoin {
         public void actionPerformed(ActionEvent e) {
             Debug.log("Button Refresh Clicked");
             new WebData.RefreshCoins();
+            try {
+    new WebData.RefreshCoins();
+} catch (Exception e) {
+    Debug.log("Error refreshing coins: " + e.getMessage());
+}
+
         }
     }
 }
