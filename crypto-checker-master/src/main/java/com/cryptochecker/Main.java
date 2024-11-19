@@ -55,7 +55,12 @@ public class Main {
             ex.printStackTrace();
         }
     }
+    {
+        if (!(new File(folderLocation).exists())) {
+        new File(folderLocation).mkdirs();
+}
 
+    }
     private void setupGUI() throws Exception {
         debug = new Debug(); // log file
 
