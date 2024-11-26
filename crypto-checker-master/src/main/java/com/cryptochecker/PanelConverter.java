@@ -283,6 +283,8 @@ public class PanelConverter {
             if (Main.gui.webData.coin.get(i).name.equals(buttonCurrency2.getText())) {
                 priceCurrency2 = Main.gui.webData.coin.get(i).price;
                 retrieveText(2, Main.gui.webData.coin.get(i).getInfo());
+                if (priceCurrency2!= 0)
+
                 break;
             }
         }
